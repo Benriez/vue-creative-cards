@@ -21,5 +21,9 @@ h1{
     margin-top: 10px;
 }
 
+.nav-link{
+    color:#333
+}
+
 
 </style>
