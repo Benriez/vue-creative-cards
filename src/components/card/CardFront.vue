@@ -1,10 +1,14 @@
 <template>
     <div class="row">
         <div class="col-sm-6 card edit-area">
-            <cc-text-input></cc-text-input>
+            <cc-text-input @displayTextChanged="textBoxValue1 = $event"></cc-text-input>
+            <cc-text-input @displayTextChanged="textBoxValue2 = $event"></cc-text-input>
+            <cc-text-input @displayTextChanged="textBoxValue3 = $event"></cc-text-input>
         </div> 
         <div class="col-sm-6 card card-display">
-
+            <cc-text-output></cc-text-output>
+            <cc-text-output></cc-text-output>
+            <cc-text-output></cc-text-output>	
         </div> 
 
     </div>
@@ -12,10 +16,19 @@
 
 <script>
 import TextInput from './Textinput.vue' 
+import TextOutput from './TextOutput.vue' 
 
 export default {
+    data: function(){
+        return{
+            textBoxValue1: '',
+            textBoxValue2: '',
+            textBoxValue3: ''
+        }
+    },
     components: {
-        ccTextInput: TextInput
+        ccTextInput: TextInput,
+        ccTextOutput: TextOutput
     }
 }
 </script>
