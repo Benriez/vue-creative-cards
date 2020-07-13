@@ -14,10 +14,8 @@
 import TextInput from './Textinput.vue' 
 
 export default {
-    data: function(){
-        compontents: {
-            ccTextInput: TextInput
-        }
+    components: {
+        ccTextInput: TextInput
     }
 }
 </script>
