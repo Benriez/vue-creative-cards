@@ -14,6 +14,7 @@
 
 <script>
 import TextInput from './Textinput.vue' 
+import TextOutput from './TextOutput.vue' 
 
 export default {
     data: function(){
@@ -24,7 +25,8 @@ export default {
         }
     },
     components: {
-        ccTextInput: TextInput
+        ccTextInput: TextInput,
+        ccTextOutput: TextOutput
     }
 }
 </script>
