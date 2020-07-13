@@ -1,7 +1,7 @@
 <template>
     <div class="row">
         <div class="col-sm-6 card edit-area">
-            <cc-text-input></cc-text-input>
+            <p>Card inside right </p>
         </div> 
         <div class="col-sm-6 card card-display">
 
@@ -11,12 +11,8 @@
 </template>
 
 <script>
-import TextInput from './Textinput.vue' 
-
 export default {
-    components: {
-        ccTextInput: TextInput
-    }
+
 }
 </script>
 
