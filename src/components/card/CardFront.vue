@@ -6,7 +6,9 @@
             <cc-text-input @displayTextChanged="textBoxValue3 = $event"></cc-text-input>
         </div> 
         <div class="col-sm-6 card card-display">
-
+            <cc-text-output></cc-text-output>
+            <cc-text-output></cc-text-output>
+            <cc-text-output></cc-text-output>	
         </div> 
 
     </div>
