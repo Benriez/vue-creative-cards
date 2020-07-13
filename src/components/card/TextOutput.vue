@@ -1,12 +1,12 @@
 <template>
     <div>
-        <p>sample text</p>
+        <p>{{displayText}}</p>
     </div>
 </template>
 
 <script>
 export default {
-    
+    props: ['displayText']
 }
 </script>
 
