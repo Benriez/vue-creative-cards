@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    //props passes data to child component
+    //props passes data from parent to child component
     props: ['displayText']
 }
 </script>
