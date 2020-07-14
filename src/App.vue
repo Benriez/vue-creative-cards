@@ -8,7 +8,7 @@
         </keep-alive>
         <cc-footer>
           <!-- content between the component tag will be inserted inside of the slot -->
-          <p class="text-center">{{appName}}</p>
+          <p class="text-center" slot="app-name">&copy; {{appName}}</p>
           <nav>
             <ul class="nav justify-content-center">
               <li class="nav-item"><a class="nav-link">Home</a></li>
