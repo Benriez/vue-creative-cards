@@ -28,6 +28,7 @@ export default {
             var storageRef= Firebase.storage().ref('user_uploads/' + this.file.name)
             var upload= storageRef.put(this.file)
 
+            //create thumbnail
             var reader= new FileReader()
             reader.readAsDataURL(this.file)
 
@@ -35,10 +36,13 @@ export default {
                 document.getElementById('image').src= e.target.result
             }
 
+            //progress bar
             upload.on('state_changed', function(snapshot) {
                 var progress= (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
                 document.getElementById('progressBar').value = progress;
             })
+
+            this.$emit('displayImageChanged', this.file.name)
         }
     }
 }
