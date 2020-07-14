@@ -7,7 +7,8 @@
           <component :is="currentPage"></component>
         </keep-alive>
         <cc-footer>
-          <p class="text-center">&copy; Creative Cards</p>
+          <!-- content between the component tag will be inserted inside of the slot -->
+          <p class="text-center">{{appName}}</p>
           <nav>
             <ul class="nav justify-content-center">
               <li class="nav-item"><a class="nav-link">Home</a></li>
@@ -33,7 +34,8 @@ export default {
   data: function(){
     return{
       //default Value
-      currentPage: 'cardFront'
+      currentPage: 'cardFront',
+      appName: 'Creative Cards'
     }
   },
   components: {
