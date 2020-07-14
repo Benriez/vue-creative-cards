@@ -7,7 +7,16 @@
 <script>
 export default {
     //props passes data from parent to child component
-    props: ['displayText']
+    props: {
+        //data validation
+        displayText: [String],
+        //because more then 1 type of validation
+        //this needs to me an object
+        containerHeight: {
+            type: Number,
+            default: 200
+        }
+    }
 }
 </script>
 
