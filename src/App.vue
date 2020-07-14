@@ -17,6 +17,7 @@ import CardFront from './components/card/CardFront.vue'
 import CardInsideLeft from './components/card/CardInsideLeft.vue'
 import CardInsideRight from './components/card/CardInsideRight.vue'
 import CardBack from './components/card/CardBack.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   data: function(){
@@ -30,7 +31,8 @@ export default {
     cardFront: CardFront,
     cardInsideLeft: CardInsideLeft,
     cardInsideRight: CardInsideRight,
-    cardBack: CardBack
+    cardBack: CardBack,
+    ccFooter: Footer
   }
 }
 </script>
