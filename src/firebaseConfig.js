@@ -1,3 +1,5 @@
+  import Firebase from 'firebase'
+  
   // Your web app's Firebase configuration
   var firebaseConfig = {
     apiKey: "AIzaSyCr0Cu2Chms5RqM3V5KIgzaDZD2mD6OCjI",
@@ -10,5 +12,5 @@
     measurementId: "G-E6KYW7GYF8"
   };
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
+  Firebase.initializeApp(firebaseConfig);
+  Firebase.analytics();
